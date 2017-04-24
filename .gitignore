@@ -1,0 +1,8 @@
+WSDBR/obj/*
+WSDBR/bin/*
+.vs/*
+.directory
+*.userprefs
+packages/*
+*.nupkg
+.idea
