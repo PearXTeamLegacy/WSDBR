@@ -81,7 +81,9 @@
   <ItemGroup>
     <Compile Include="ContactsWindow.cs" />
     <Compile Include="MainWindow.cs" />
+    <Compile Include="MessagesWindow.cs" />
     <Compile Include="Model\Contact.cs" />
+    <Compile Include="Model\Message.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
