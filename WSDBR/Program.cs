@@ -3,7 +3,7 @@ using Gtk;
 
 namespace WSDBR
 {
-    public class Program
+    public static class Program
     {
         public static void Main()
         {

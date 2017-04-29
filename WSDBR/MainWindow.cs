@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using Gdk;
 using Gtk;
@@ -112,7 +114,15 @@ namespace WSDBR
                 if (cont.JId == jid)
                 {
                     if (string.IsNullOrEmpty(cont.DisplayName))
-                        return "<none>";
+                    {
+                        if (string.IsNullOrEmpty(cont.WaName))
+                        {
+                            if(string.IsNullOrEmpty(cont.Number))
+                                return "<none>";
+                            return cont.Number;
+                        }
+                        return cont.WaName;
+                    }
                     return cont.DisplayName;
                 }
             }
