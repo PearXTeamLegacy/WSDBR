@@ -36,7 +36,7 @@ namespace WSDBR
                 VBox vb = new VBox();
                 ScrolledWindow win = new ScrolledWindow();
                 EventyTreeView v = new EventyTreeView();
-                Button btnRead = new Button("<");
+                Button btnRead = new Button("Read");
                 v.Prepare(GType.String, GType.String, GType.String);
                 v.AppendColumn("From");
                 v.AppendColumn("Time");
